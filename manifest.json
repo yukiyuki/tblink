@@ -1,0 +1,17 @@
+{
+    "description": "tblink",
+    "manifest_version": 2,
+    "name": "tblink",
+    "options_page": "options.html",
+    "permissions": [ "tabs" ],
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "js": [ "main.js" ],
+            "matches": [ "http://tieba.baidu.com/*"],
+            "permissions": [ "tabs" ],
+            "run_at": "document_end"
+        }
+    ],
+    "version": "1.0.0.3"
+}
